@@ -1,0 +1,116 @@
+* {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 250;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-image: url(../assets/loading3.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 60%;
+}
+#loginForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in-out {
+  animation: fadeInOut 8s ease-in-out forwards;
+}
+
+.fade-out {
+  transform: translateY(-20px);
+  transition: opacity 2.5s ease, transform 2.5s ease;
+
+}
+
+input, label{
+  height: 10vh;
+  width: 70vh;
+  border-radius: 15px;
+  text-align: center;
+}
+
+button {
+  width: 60vh;
+  position: relative;
+  height: 15vh;
+  border: 5px ridge #980724d9;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.56);
+  color: rgb(255, 7, 7);
+  transition: 500ms;
+  border-radius: 15px;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #00000000;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #21212100;
+  transition: 0.5s;
+}
+
+button:hover::before,
+button:hover::after {
+  transform: scale(0)
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 25px #620e01;
+  transform: scale(1.2);
+}

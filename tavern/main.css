@@ -1,0 +1,62 @@
+body{
+    background-image: url(./view/tfFtH4HypBZ6L36ZfQAAAAAElFTkSuQmCC.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#porta{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(252, 22, 22, 0);  
+    border: none;
+    margin-top: 60vh;
+    margin-left: 46vh;
+    height: 210px;
+    width: 180px;
+    position: relative; 
+    z-index: 1;
+}
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .fade-in-out {
+    animation: fadeInOut 7s ease-in-out forwards;
+  }
+  
+  .fade-out {
+    transform: translateY(-20px);
+    transition: opacity 2.5s ease, transform 2.5s ease;
+  
+  }
+
+  #transientPage{
+    position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100vh;
+      width: 100%;
+      margin: 0;
+      background-image: url(../assets/loading2.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: 100%;
+  }
