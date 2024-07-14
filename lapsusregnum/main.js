@@ -1,3 +1,9 @@
+const sommenu = new Audio('../sounds/sound.mp3');
+
+document.addEventListener('DOMContentLoaded', () => {
+    sommenu.play();
+})
+
 import Animator from "./system/Animator.js";
 import Goblin from "./entities/beings/Goblin.js";
 import Dragon from "./entities/beings/Dragon.js";

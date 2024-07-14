@@ -1,8 +1,6 @@
 *{
     font-family: "MedievalSharp", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 450px;
+   
 }
 
 body{
@@ -73,7 +71,21 @@ body{
     margin-top: 80vh;
     gap: 25px;
 }
-
+#slotsave{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 80vh;
+  gap: 25px;
+}
+#save1, #save2, #save3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
 button {
     width: 50em;
     position: relative;

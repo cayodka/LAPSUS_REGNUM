@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const somonline = new Audio('../sounds/clickonline.mp3');
-    document.getElementById('newgame').addEventListener('click', () => {
+    document.getElementById('save1').addEventListener('click', () => {
         somonline.play();
         setTimeout(() => {
             window.location.href = '../lapsusregnum/index.html';
@@ -42,4 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('options').addEventListener('click', () => {
         somonline.play();
     });
+});
+
+document.getElementById('newgame').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('botõesDoMenu').style.display = 'none';
+    document.getElementById('slotsave').style.display = 'flex';
 });

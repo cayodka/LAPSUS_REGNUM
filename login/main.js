@@ -1,3 +1,8 @@
+document.getElementById('começar').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('loginForm').style.display = 'flex';
+});
+
 const sommenu = new Audio('../sounds/sound.mp3');
 document.addEventListener('DOMContentLoaded', () => {
 sommenu.play();
@@ -6,6 +11,16 @@ sommenu.play();
 const hoversom = new Audio('../sounds/hoverbutton.mp3')
 document.getElementById('button').addEventListener('mouseenter', () => {
     hoversom.play();
+});
+
+const hoversom2 = new Audio('../sounds/hoverbutton.mp3')
+document.getElementById('começar').addEventListener('mouseenter', () => {
+    hoversom2.play();
+});
+
+const hoversom3 = new Audio('../sounds/clickoptions.mp3')
+document.getElementById('começar').addEventListener('click', () => {
+    hoversom3.play();
 });
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -17,6 +32,7 @@ const messageElement = document.getElementById('message');
 
 const validUsername = 'cayodka';
 const validPassword = 'Manancial24!';
+
 
 if (username === validUsername && password === validPassword) {
 const somcerto = new Audio('../sounds/correct.mp3')

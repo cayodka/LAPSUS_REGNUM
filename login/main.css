@@ -24,8 +24,18 @@ body {
   background-position: center;
   opacity: 60%;
 }
-#loginForm{
+
+#começar{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  margin-top: 40vh;
+}
+
+#loginForm{
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
